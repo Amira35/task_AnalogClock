@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+}
+.clock{
+    width: 200px;
+    background-color: transparent;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+.number{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.number1{transform: rotate(30deg);}
+.number2{transform: rotate(60deg);}
+.number3{transform: rotate(90deg);}
+.number4{transform: rotate(120deg);}
+.number5{transform: rotate(150deg);}
+.number6{transform: rotate(180deg);}
+.number7{transform: rotate(210deg);}
+.number8{transform: rotate(240deg);}
+.number9{transform: rotate(270deg);}
+.number10{transform: rotate(300deg);}
+.number11{transform: rotate(330deg);}
+.number12{transform: rotate(360deg);}
+
+.hand-hours::before{
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: -165%;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+}
+.hand-hours{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50px;
+    background-color: black;
+    border-radius: 25px;
+    transform-origin: bottom;
+}
+.hand-mintues{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 85px;
+    background-color: black;
+    border-radius: 25px;
+    transform-origin: bottom;
+}
